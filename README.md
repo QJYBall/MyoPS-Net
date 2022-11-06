@@ -11,5 +11,5 @@ The proposed MyoPS-Net were evaluated on two datasets, i.e., a private one consi
 ## Usage
 To be updated.
 
-## Citation and Ackonwledge
+## Citation and Acknowledge
 To be updated.

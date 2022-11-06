@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from network.UNet import UNet, UNetEncoder, UNetDecoder, UNetDecoderPlus
+from network.unet import UNet, UNetEncoder, UNetDecoder, UNetDecoderPlus
 
 
 ### Segment

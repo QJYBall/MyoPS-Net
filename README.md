@@ -1,5 +1,5 @@
 # MyoPS-Net
-PyTorch implemetation for our paper "MyoPS-Net: Myocardial Pathology Segmentation with Flexible Combination of Multi-Sequence CMR images" (Under Review).
+PyTorch implemetation for our paper "MyoPS-Net: Myocardial Pathology Segmentation with Flexible Combination of Multi-Sequence CMR images" (Accepted by MedIA).
 
 <img decoding="async" src="structure.png">
 
@@ -12,4 +12,9 @@ The proposed MyoPS-Net were evaluated on two datasets, i.e., a private one consi
 To be updated.
 
 ## Citation and Acknowledge
-To be updated.
+@article{qiu2022myops,
+  title={MyoPS-Net: Myocardial Pathology Segmentation with Flexible Combination of Multi-Sequence CMR Images},
+  author={Qiu, Junyi and Li, Lei and Wang, Sihan and Zhang, Ke and Chen, Yinyin and Yang, Shan and Zhuang, Xiahai},
+  journal={arXiv preprint arXiv:2211.03062},
+  year={2022}
+}

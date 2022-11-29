@@ -140,9 +140,9 @@ class SegmentationLoss(nn.Module):
         return loss
 
 
-class MLSCLoss(nn.Module):
+class MyoPSLoss(nn.Module):
     def __init__(self):
-        super(MLSCLoss, self).__init__()
+        super(MyoPSLoss, self).__init__()
 
         self.seg_loss = SegmentationLoss()
         self.invariant_loss = InvariantLoss()

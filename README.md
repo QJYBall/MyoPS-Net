@@ -1,5 +1,5 @@
 # MyoPS-Net
-PyTorch implemetation for our paper "MyoPS-Net: Myocardial Pathology Segmentation with Flexible Combination of Multi-Sequence CMR images" (Accepted by MedIA, 2022.11.17 Updated).
+PyTorch implemetation for our MedIA paper "MyoPS-Net: Myocardial Pathology Segmentation with Flexible Combination of Multi-Sequence CMR Images" (https://doi.org/10.1016/j.media.2022.102694).
 
 <img decoding="async" src="structure.png">
 
@@ -17,16 +17,19 @@ python main.py --path /data/ --batch_size 16 --dim 192 --lr 1e-4 --threshold 0.5
 ### Predict
 ```
 python predict.py --load_path checkpoints/xxx.pth --predict_mode single --threshold 0.50 --dim 192
-or
-python predict.py --load_path checkpoints --predict_mode multiple --threshold 0.50 --dim 192
 ```
 
 ## Citation and Acknowledge
+If you make use of the code, or if you found the code useful, please cite this paper in any resulting publications.
 ```
 @article{qiu2022myops,
-  title={MyoPS-Net: Myocardial Pathology Segmentation with Flexible Combination of Multi-Sequence CMR Images},
-  author={Qiu, Junyi and Li, Lei and Wang, Sihan and Zhang, Ke and Chen, Yinyin and Yang, Shan and Zhuang, Xiahai},
-  journal={arXiv preprint arXiv:2211.03062},
-  year={2022}
+title = {MyoPS-Net: Myocardial pathology segmentation with flexible combination of multi-sequence CMR images},
+journal = {Medical Image Analysis},
+pages = {102694},
+year = {2022},
+issn = {1361-8415},
+doi = {https://doi.org/10.1016/j.media.2022.102694},
+author = {Junyi Qiu and Lei Li and Sihan Wang and Ke Zhang and Yinyin Chen and Shan Yang and Xiahai Zhuang}
 }
 ```
+If you have any problems, please feel free to contact us. Thanks for your attention.

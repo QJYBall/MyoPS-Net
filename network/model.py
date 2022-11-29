@@ -4,9 +4,9 @@ from network.unet import UNet, UNetEncoder, UNetDecoder, UNetDecoderPlus
 
 
 ### Segment
-class CrossModalSegNet(nn.Module):
+class MyoPSNet(nn.Module):
     def __init__(self, in_chs, out_chs):
-        super(CrossModalSegNet, self).__init__()
+        super(MyoPSNet, self).__init__()
 
         self.unet_C0 = UNet(in_ch = in_chs[0], out_ch = out_chs[0])
 

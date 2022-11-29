@@ -9,9 +9,25 @@ Myocardial pathology segmentation (MyoPS) can be a prerequisite for the accurate
 The proposed MyoPS-Net were evaluated on two datasets, i.e., a private one consisting of 50 paired multi-sequence CMR images and a public one from MICCAI2020 MyoPS Challenge (https://zmiclab.github.io/zxh/0/myops20/). Experimental results showed that MyoPS-Net could achieve state-of-the-art performance in various scenarios. Note that in practical clinics, the subjects may not have full sequences, such as missing LGE CMR or mapping CMR scans. We therefore conducted extensive experiments to investigate the performance of the proposed method in dealing with such complex combinations of different CMR sequences. Results proved the superiority and generalizability of MyoPS-Net, and more importantly, indicated a practical clinical application.
 
 ## Usage
+### Dataset
+Please organize the dataset as the following structure:
+```
+data/
+  -- train_set/
+     -- train_image/
+     -- train_gd/
+  -- val_set/     
+     -- val_image/
+     -- val_gd/
+  -- test_set/
+     -- test_image/
+  -- train.txt (with each line: image_path gd_path z_index)
+  -- validation.txt (with each line: image_path gd_path z_index)
+  -- test.csv (with each line: image_path stage dx dy dz)
+```
 ### Train
 ```
-python main.py --path /data/ --batch_size 16 --dim 192 --lr 1e-4 --threshold 0.50 --end_epoch 200
+python main.py --path "data_path" --batch_size 16 --dim 192 --lr 1e-4 --threshold 0.50 --end_epoch 200
 ```
 
 ### Predict

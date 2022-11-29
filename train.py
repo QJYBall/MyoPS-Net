@@ -2,22 +2,22 @@ import os
 import torch
 from itertools import cycle
 import torch.optim as optim
-from criterion.loss import MLSCLoss
+from criterion.loss import MyoPSLoss
 from utils.tools import weights_init
 from tensorboardX import SummaryWriter
 from torch.utils.data import DataLoader
-from network.model import CrossModalSegNet
+from network.model import MyoPSNet
 from validation import Validation2d
 from utils.dataloader import CrossModalDataLoader
 
 
-def CrossModalSegNetTrain(args):
+def MyoPSNetTrain(args):
 
     # C0(5,3) LGE(2,3) T2(2,3) mapping(3,3)
-    model = CrossModalSegNet(in_chs=(5,2,2,3), out_chs=(3,3,3,3)).cuda()
+    model = MyoPSNet(in_chs=(5,2,2,3), out_chs=(3,3,3,3)).cuda()
     model.apply(weights_init)
 
-    mlsc_loss = MLSCLoss().cuda()
+    mlsc_loss = MyoPSLoss().cuda()
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=5e-4)
     lr_scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=50, eta_min=1e-6, last_epoch=-1)
 

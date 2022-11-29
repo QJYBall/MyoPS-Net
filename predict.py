@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import nibabel as nib
 from utils.config import config
-from network.model import CrossModalSegNet
+from network.model import MyoPSNet
 from process import LargestConnectedComponents
 from utils.tools import Normalization, ImageTransform, ResultTransform
 
@@ -17,7 +17,7 @@ from utils.tools import Normalization, ImageTransform, ResultTransform
 def predict(args, model_path, epoch):
 
     # model definition
-    model = CrossModalSegNet(in_chs=(5,2,2,3), out_chs=(3,3,3,3))
+    model = MyoPSNet(in_chs=(5,2,2,3), out_chs=(3,3,3,3))
     model.load_state_dict(torch.load(model_path, map_location='cpu'))
     model.eval()
 

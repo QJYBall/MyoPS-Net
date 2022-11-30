@@ -48,4 +48,5 @@ doi = {https://doi.org/10.1016/j.media.2022.102694},
 author = {Junyi Qiu and Lei Li and Sihan Wang and Ke Zhang and Yinyin Chen and Shan Yang and Xiahai Zhuang}
 }
 ```
-If you have any problems, please feel free to contact us. Thanks for your attention.
+J. Qiu, L. Li, S. Wang et al., MyoPS-Net: Myocardial pathology segmentation with flexible combination of multi-sequence CMR images. Medical Image Analysis(2022), doi: https://doi.org/10.1016/j.media.2022.102694.
+

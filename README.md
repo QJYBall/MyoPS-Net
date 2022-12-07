@@ -38,11 +38,12 @@ python predict.py --load_path checkpoints/xxx.pth --predict_mode single --thresh
 ## Citation and Acknowledge
 If you make use of the code, or if you found the code useful, please cite this paper in any resulting publications.
 ```
-@article{qiu2022myops,
+@article{MyoPS-Net,
 title = {MyoPS-Net: Myocardial pathology segmentation with flexible combination of multi-sequence CMR images},
 journal = {Medical Image Analysis},
+volume = {84},
 pages = {102694},
-year = {2022},
+year = {2023},
 issn = {1361-8415},
 doi = {https://doi.org/10.1016/j.media.2022.102694},
 author = {Junyi Qiu and Lei Li and Sihan Wang and Ke Zhang and Yinyin Chen and Shan Yang and Xiahai Zhuang}
